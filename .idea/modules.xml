@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/BoardR5.iml" filepath="$PROJECT_DIR$/BoardR5.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/.idea/Telerik_Academy_Java.iml" filepath="$PROJECT_DIR$/.idea/Telerik_Academy_Java.iml" />
->>>>>>> 478d482ce25fb8f956ef72aa98338e40926ce228
     </modules>
   </component>
 </project>
