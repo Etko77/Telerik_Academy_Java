@@ -4,6 +4,8 @@ import com.company.oop.cosmetics.exceptions.InvalidDataProvided;
 import com.company.oop.cosmetics.models.contracts.Product;
 import com.company.oop.cosmetics.regex.DataValidator;
 
+
+
 public class ProductImpl implements Product {
 
     private String name;
@@ -45,9 +47,7 @@ public class ProductImpl implements Product {
             if(price < 0){
                 throw new InvalidDataProvided("Invalid price provided");
             }
-        }catch (InvalidDataProvided e){
-            System.out.println(e.getMessage());
-        }
+        }finally{}
 
         this.price = price;
     }

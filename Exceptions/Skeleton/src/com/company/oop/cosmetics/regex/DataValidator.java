@@ -9,19 +9,22 @@ public class DataValidator {
             if(!name.matches(regex)){
                 throw new InvalidDataProvided("Invalid name provided");
             }
-        }catch(InvalidDataProvided e){
-            System.out.println(e.getMessage());
+        }finally{
+
         }
 
     }
     public static void validateBrand(String name) throws InvalidDataProvided {
         String regex = "^.{2,10}$";
-        try{
-            if(!name.matches(regex)){
+        try {
+            if (!name.matches(regex)) {
                 throw new InvalidDataProvided("Invalid brand provided");
             }
-        }catch(InvalidDataProvided e){
-            System.out.println(e.getMessage());
+//        }catch(InvalidDataProvided e){
+//            System.out.println(e.getMessage());
+//        }
+        }finally{
+
         }
 
     }

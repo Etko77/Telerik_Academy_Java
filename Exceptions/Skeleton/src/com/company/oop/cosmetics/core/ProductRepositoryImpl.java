@@ -1,7 +1,9 @@
 package com.company.oop.cosmetics.core;
 
 import com.company.oop.cosmetics.core.contracts.ProductRepository;
+
 import com.company.oop.cosmetics.models.CategoryImpl;
+
 import com.company.oop.cosmetics.models.GenderType;
 import com.company.oop.cosmetics.models.ProductImpl;
 import com.company.oop.cosmetics.models.contracts.Product;
@@ -36,13 +38,16 @@ public class ProductRepositoryImpl implements ProductRepository {
     @Override
     public Product findProductByName(String productName) {
         // TODO: find a product with the given product name
-        //Wrote it elsewhere
-
+        for(Product product: products) {
+            if (product.getName().equals(productName)) {
+                return product;
+            }
+        }
         return null;
     }
 
     @Override
-    public Category findCategoryByName(String categoryName) {
+    public Category findCategoryByName(String categoryName){
         for (Category category : getCategories()) {
             if (category.getName().equalsIgnoreCase(categoryName)) {
                 return category;

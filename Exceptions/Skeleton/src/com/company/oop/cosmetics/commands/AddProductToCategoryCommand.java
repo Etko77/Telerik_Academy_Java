@@ -21,14 +21,12 @@ public class AddProductToCategoryCommand implements Command {
     public String execute(List<String> parameters) {
         //TODO Validate parameters count
 
-        try{
-            if(parameters.size() < 2){
-                throw new IndexOutOfBoundsException("Not enough parameters provided");
-            }
 
-        }catch(IndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+        if(parameters.size() < 2){
+            throw new IndexOutOfBoundsException("Not enough parameters provided");
         }
+
+
         String categoryNameToAdd = parameters.get(0);
         String productNameToAdd = parameters.get(1);
 

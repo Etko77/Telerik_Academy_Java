@@ -23,28 +23,29 @@ public class CreateProductCommand implements Command {
     public String execute(List<String> parameters) {
         //TODO Validate parameters count
 
-        try{
-            if(parameters.size() < 4) {
-                throw new IndexOutOfBoundsException("Not enough parameters provided");
-            }
-
-        }catch(IndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+        if (parameters.size() < 4) {
+            throw new IllegalArgumentException("Not enough parameters provided");
         }
         String name = parameters.get(0);
         String brand = parameters.get(1);
 
         //TODO Validate price format
-        double price = Double.parseDouble(parameters.get(2));
-        if (price < 0){
-            price = 0;
+        double price;
+        try {
+            price = Double.parseDouble(parameters.get(2));
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Invalid price format: " + parameters.get(2));
+        }
+
+        if (price < 0) {
+            throw new IllegalArgumentException("Price cannot be negative");
         }
         //TODO Validate gender format
-        GenderType gender = null;
-        try{
+        GenderType gender;
+        try {
             gender = GenderType.valueOf(parameters.get(3).toUpperCase());
-        }catch(IllegalArgumentException e){
-            System.out.println("Incorrect gender data");
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("Incorrect gender data: " + parameters.get(3));
         }
 
 
@@ -53,19 +54,17 @@ public class CreateProductCommand implements Command {
 
     private String createProduct(String name, String brand, double price, GenderType gender) {
         //TODO Ensure product name is unique
-        for(Product product:productRepository.getProducts()){
-            try{
-                if(product.getName().equals(name)){
-                    throw new InvalidDataProvided("Product name already exists");
-                }
-            }catch(InvalidDataProvided e){
-                System.out.println(e.getMessage());
-            }
+        if(productRepository.findProductByName(name) == null){
+            productRepository.createProduct(name, brand, price, gender);
+            return String.format(PRODUCT_CREATED, name);
 
         }
-        productRepository.createProduct(name, brand, price, gender);
+        if(productRepository.findProductByName(name)
+                .getName().equals(name)){
+            throw new InvalidDataProvided("This product already exists");
+        }
 
-        return String.format(PRODUCT_CREATED, name);
+        return "none";
     }
 
 }

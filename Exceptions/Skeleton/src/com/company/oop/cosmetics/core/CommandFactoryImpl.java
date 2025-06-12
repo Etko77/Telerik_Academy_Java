@@ -4,6 +4,7 @@ import com.company.oop.cosmetics.commands.*;
 import com.company.oop.cosmetics.core.contracts.CommandFactory;
 import com.company.oop.cosmetics.core.contracts.ProductRepository;
 import com.company.oop.cosmetics.commands.contracts.Command;
+import com.company.oop.cosmetics.exceptions.InvalidDataProvided;
 
 public class CommandFactoryImpl implements CommandFactory {
 
@@ -27,7 +28,9 @@ public class CommandFactoryImpl implements CommandFactory {
             }
         }catch(IllegalArgumentException e)
         {
-            throw new IllegalArgumentException("Invalid command");
+            System.out.printf("Command %s is not supported%n",commandTypeValue);
+
+            return null;
         }
 
 

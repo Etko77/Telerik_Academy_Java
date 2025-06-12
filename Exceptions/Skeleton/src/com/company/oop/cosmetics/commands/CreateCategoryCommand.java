@@ -23,13 +23,13 @@ public class CreateCategoryCommand implements Command {
     @Override
     public String execute(List<String> parameters) {
         //TODO Validate parameters count DONE
-        String categoryNameToAdd;
+
 
         try{
-            if(parameters.size() < 1){
+            if(parameters.isEmpty()){
                 throw new IndexOutOfBoundsException("Not enough parameters provided");
             }
-            categoryNameToAdd = parameters.get(0);
+
 
         }catch(IndexOutOfBoundsException e){
             System.out.println(e.getMessage());
@@ -42,14 +42,10 @@ public class CreateCategoryCommand implements Command {
 
     private String createCategory(String categoryName) {
         for(Category category:productRepository.getCategories()){
-            try{
-                if(category.getName().equals(categoryName)){
-                    throw new InvalidDataProvided("Category name already exists");
-                }
-            }catch(InvalidDataProvided e){
-                System.out.println(e.getMessage());
-            }
 
+            if(category.getName().equals(categoryName)){
+                throw new InvalidDataProvided("Category name already exists");
+            }
         }
 
         productRepository.createCategory(categoryName);

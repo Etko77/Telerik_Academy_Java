@@ -4,6 +4,7 @@ import com.company.oop.cosmetics.core.contracts.CommandFactory;
 import com.company.oop.cosmetics.core.contracts.Engine;
 import com.company.oop.cosmetics.core.contracts.ProductRepository;
 import com.company.oop.cosmetics.commands.contracts.Command;
+import com.company.oop.cosmetics.exceptions.InvalidDataProvided;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,9 +41,17 @@ public final class EngineImpl implements Engine {
     private void processCommand(String inputLine) {
         String commandName = extractCommandName(inputLine);
         Command command = commandFactory.createCommandFromCommandName(commandName, productRepository);
+        if(command == null){
+            return;
+        }
         List<String> parameters = extractCommandParameters(inputLine);
-        String executionResult = command.execute(parameters);
-        System.out.println(executionResult);
+        try{
+            String executionResult = command.execute(parameters);
+            System.out.println(executionResult);
+        }catch (IllegalArgumentException | IndexOutOfBoundsException | InvalidDataProvided e){
+            System.out.println("Error: "+ e.getMessage());
+        }
+
     }
 
     /**
