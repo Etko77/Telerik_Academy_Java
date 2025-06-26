@@ -254,7 +254,7 @@ public class DataProcessor {
 //                result.add(customer);
 //            }
 //        }
-
+        customers.stream().dr
         return customers
                 .stream()
                 .filter(c -> c.getLikedMovies()
