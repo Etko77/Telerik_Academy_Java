@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02f6ec62-b76e-436e-b5cb-8ecbf162c7e4" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/Telerik_Academy_Java.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
@@ -20,9 +19,13 @@
       <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/Java_Abstraction.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/LinkedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/LinkedQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/LinkedQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Board.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/BoardItem.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/ConsoleLogger.class" beforeDir="false" />
@@ -70,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/etien/Desktop/Telerik_Academy_Java/Worksshop4/Skeleton"
+    "last_opened_file_path": "C:/Users/ety/Desktop/Telerik_Academy/Java/Telerik_Academy_Java"
   }
 }]]></component>
   <component name="SharedIndexes">
