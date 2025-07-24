@@ -5,19 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f6ec62-b76e-436e-b5cb-8ecbf162c7e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Coding101/spring-boot-bootcamp-resources-main/.idea/spring-boot-bootcamp-resources-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/spring-boot-bootcamp-resources-main/08. rest-api/.idea/08. rest-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/sqlCourse/JoinUsCompleteCode/node_modules/mysql2/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/sqlCourse/node/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/sqlCourse/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/studentSystem/.idea/studentSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/student_system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/FileErrorHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Telerik_Academy_Java.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Telerik_Academy_Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/Java_Abstraction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/BoardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/ConsoleLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/EventLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Issue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Status$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/BoardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/ConsoleLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/EventLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Issue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Task.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +51,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +68,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/etien/Desktop/Telerik_Academy_Java/Worksshop4/Skeleton"
   }
