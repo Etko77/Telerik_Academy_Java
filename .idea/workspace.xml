@@ -13,11 +13,8 @@
       <change afterPath="$PROJECT_DIR$/../Coding101/studentSystem/.idea/studentSystem.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/student_system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/FileErrorHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/Skeleton/src/com/company/oop/cosmetics/examples/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Telerik_Academy_Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardR5" beforeDir="false" afterPath="$PROJECT_DIR$/BoardR5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/etien/Desktop/Telerik_Academy_Java/Worksshop4/Skeleton"
+    "last_opened_file_path": "C:/Users/etien/Desktop/Logisitics_App_Teamwork/Logistics-App-Teamwork"
   }
 }]]></component>
   <component name="SharedIndexes">
