@@ -1,7 +1,11 @@
 package com.company.dsa;
 
+import org.junit.platform.engine.support.hierarchical.Node;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class BinarySearchTreeImpl<E extends Comparable<E>> implements BinarySearchTree<E> {
     private E value;
@@ -110,22 +114,31 @@ public class BinarySearchTreeImpl<E extends Comparable<E>> implements BinarySear
         return elems;
     }
 
-
     @Override
     public List<E> bfs() {
-        throw new UnsupportedOperationException();
+        List<E> elems = new ArrayList<>();
+        Queue<BinarySearchTreeImpl<E>> queue = new LinkedList<>();
+        queue.add(this); // start with root
+
+        while (!queue.isEmpty()) {
+            BinarySearchTreeImpl<E> current = queue.poll();
+            elems.add(current.value);
+
+            if (current.left != null) {
+                queue.add(current.left);
+            }
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+        }
+        return elems;
     }
 
     @Override
     public int height() {
-        if(left == null){
-            return -1;
-        }
-        if(right == null){
-            return 0;
-        }
-        return left.height() + 1 + right.height();
-
+        int leftHeight = (left == null) ? -1 : left.height();
+        int rightHeight = (right == null) ? -1 : right.height();
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 
     // Advanced task: implement remove method. To test, uncomment the commented tests in BinaryTreeImplTests
