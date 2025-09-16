@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f549ef61-ff4c-41ac-ac1d-669a97dba322" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../Coding101/spring-boot-bootcamp-resources-main/.idea/spring-boot-bootcamp-resources-main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/spring-boot-bootcamp-resources-main/08. rest-api/.idea/08. rest-api.iml" afterDir="false" />
@@ -14,6 +15,52 @@
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/student_system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BoardR5" beforeDir="false" afterPath="$PROJECT_DIR$/BoardR5" afterDir="false" />
+=======
+    <list default="true" id="02f6ec62-b76e-436e-b5cb-8ecbf162c7e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Telerik_Academy_Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/Java_Abstraction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Abstraction/Java_Abstraction/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/src/com/company/dsa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/src/com/company/dsa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/LinkedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/out/production/Skeleton/com/company/dsa/queue/LinkedQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton/src/com/company/dsa/queue/LinkedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/BoardItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/ConsoleLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/EventLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Issue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Status$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Solution/com/company/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/BoardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/ConsoleLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/EventLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Issue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Task.java" beforeDir="false" />
+>>>>>>> 571e7d2d0fe1197b2a0db9e6fbbe8e2c62284199
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +83,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/etien/Desktop/Telerik_Academy_Java/Algorithm/LinkedList/Skeleton"
+=======
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ety/Desktop/Telerik_Academy/Java/Telerik_Academy_Java/Algorithm/LinkedList/Skeleton"
+>>>>>>> 571e7d2d0fe1197b2a0db9e6fbbe8e2c62284199
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
