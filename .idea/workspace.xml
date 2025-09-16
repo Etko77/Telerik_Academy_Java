@@ -13,44 +13,6 @@
       <change afterPath="$PROJECT_DIR$/../Coding101/studentSystem/.idea/studentSystem.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Coding101/student_system/.idea/student_system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/Skeleton.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-jupiter-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-jupiter-api-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-jupiter-engine-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-jupiter-params-5.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-platform-commons-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/junit-platform-engine-1.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/lib/opentest4j-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/out/production/Skeleton/com/company/dsa/LinkedList$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/out/production/Skeleton/com/company/dsa/LinkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/out/production/Skeleton/com/company/dsa/List.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/out/production/Skeleton/com/company/dsa/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/out/test/Skeleton/com/company/dsa/tests/LinkedListTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/src/com/company/dsa/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/src/com/company/dsa/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/src/com/company/dsa/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/LinkedList/Skeleton/tests/com/company/dsa/tests/LinkedListTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/.idea/StackAndQueue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/Images/StackVsQueue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/Images/stack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueue/Skeleton.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BoardR5" beforeDir="false" afterPath="$PROJECT_DIR$/BoardR5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +36,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/etien/Desktop/Telerik_Academy_Java/Algorithm/LinkedList/Skeleton"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
