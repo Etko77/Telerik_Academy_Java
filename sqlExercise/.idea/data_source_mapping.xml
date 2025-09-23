@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/b5da98fc-6570-47a7-a0a0-05e8b49d1950/console.sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+    <file url="file://$PROJECT_DIR$/company_database.sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+    <file url="file://$PROJECT_DIR$/skeleton (1).sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+    <file url="file://$PROJECT_DIR$/sqlQAactivity.sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+    <file url="file://$PROJECT_DIR$/university_v1.sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+    <file url="file://$PROJECT_DIR$/university_v2.sql" value="b5da98fc-6570-47a7-a0a0-05e8b49d1950" />
+  </component>
+</project>
