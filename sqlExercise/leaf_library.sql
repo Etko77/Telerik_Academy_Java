@@ -296,3 +296,76 @@ INSERT INTO loans (copy_id, member_id, loan_date, due_date, return_date) VALUES
                                                                              (42, 17, '2025-09-01', '2025-09-15', NULL),
                                                                              (43, 18, '2025-09-01', '2025-09-15', NULL),
                                                                              (44, 19, '2025-09-01', '2025-09-15', NULL);
+
+-- Queries--
+#1
+SELECT b.title AS book_title,CONCAT(a.first_name,' ',a.last_name)AS author FROM books AS b
+JOIN book_authors ba on b.book_id = ba.book_id
+JOIN authors a on ba.author_id = a.author_id;
+#2
+SELECT c.copy_id, b.title,
+       CASE
+           WHEN l.return_date IS NULL AND CURDATE() <= l.due_date THEN 'On loan'
+           WHEN l.return_date IS NULL AND CURDATE() > l.due_date THEN 'Overdue'
+           ELSE 'Available'
+           END AS availability
+FROM copies c
+         JOIN books b ON c.book_id = b.book_id
+         LEFT JOIN loans l ON c.copy_id = l.copy_id
+WHERE b.title = '1984';
+#3
+SELECT b.title, CONCAT(a.first_name,' ',a.last_name)AS author from books AS b
+JOIN book_authors ba on b.book_id = ba.book_id
+JOIN authors a on ba.author_id = a.author_id
+WHERE b.title LIKE '%19%' OR a.last_name= 'Rowling';
+#4
+SELECT
+    m.full_name, b.title, c.copy_id, l.loan_date,l.due_date FROM members as m
+JOIN loans l on m.member_id = l.member_id
+JOIN copies c on l.copy_id = c.copy_id
+JOIN books b on c.book_id = b.book_id
+WHERE l.return_date IS NULL;
+#5
+SELECT
+    m.full_name, b.title, c.copy_id, l.loan_date,l.due_date FROM members as m
+JOIN loans l on m.member_id = l.member_id
+JOIN copies c on l.copy_id = c.copy_id
+JOIN books b on c.book_id = b.book_id
+WHERE l.return_date > l.due_date;
+#6
+SELECT b.title,COUNT(l.loan_id)AS total_loan_count FROM books AS b
+JOIN copies c on b.book_id = c.book_id
+JOIN loans l on c.copy_id = l.copy_id
+        GROUP BY b.title
+        ORDER BY total_loan_count DESC
+        LIMIT 3;
+#7
+SELECT DATE_FORMAT(loan_date, '%Y-%m') AS month, COUNT(*) AS loan_count
+FROM loans
+WHERE loan_date >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH)
+GROUP BY DATE_FORMAT(loan_date, '%Y-%m')
+ORDER BY month;
+#8
+SELECT m.full_name AS member
+FROM members m
+         JOIN loans l ON m.member_id = l.member_id
+WHERE l.return_date IS NULL
+GROUP BY m.member_id
+HAVING COUNT(*) = 5;
+#9
+SELECT m.full_name AS member
+FROM members m
+         JOIN loans l ON m.member_id = l.member_id
+WHERE l.return_date IS NOT NULL
+GROUP BY m.member_id
+HAVING AVG(DATEDIFF(l.return_date, l.due_date)) > 2;
+#10
+SELECT m.full_name AS member,
+       b.title,
+       DATEDIFF(CURDATE(), l.due_date) AS days_late,
+       DATEDIFF(CURDATE(), l.due_date) * 0.50 AS fine_amount
+FROM loans l
+         JOIN members m ON l.member_id = m.member_id
+         JOIN copies c ON l.copy_id = c.copy_id
+         JOIN books b ON c.book_id = b.book_id
+WHERE l.return_date IS NULL AND CURDATE() > l.due_date;
