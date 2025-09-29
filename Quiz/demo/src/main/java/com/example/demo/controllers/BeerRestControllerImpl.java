@@ -1,6 +1,6 @@
-package com.example.demo;
+package com.example.demo.controllers;
 
-import models.Beer;
+import com.example.demo.models.BeerImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -9,23 +9,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/beerApi")
-public class BeerRestController {
-    private List<Beer> beerList;
+@RequestMapping("/beerApi/beers")
+public class BeerRestControllerImpl implements BeerRestController {
+    private final List<BeerImpl> beerList;
 
-    public BeerRestController(){
+    public BeerRestControllerImpl(){
         beerList = new ArrayList<>();
-        beerList.add(new Beer("Zagorka",1,5.5));
-        beerList.add(new Beer("Zagorka Retro",4,5.4));
-        beerList.add(new Beer("Heineken",10,5.3));
+
+        beerList.add(new BeerImpl("Zagorka",1,5.5));
+        beerList.add(new BeerImpl("Zagorka Retro",4,5.4));
+        beerList.add(new BeerImpl("Heineken",10,5.3));
     }
 
-    @GetMapping("/beers")
-    public List<Beer> getBeers(){
+    @GetMapping
+    public List<BeerImpl> getBeers(){
         return beerList;
     }
-    @GetMapping("/beers/{id}")
-    public Beer getBeer(@PathVariable int id) {
+
+    @GetMapping("/{id}")
+    public BeerImpl getBeer(@PathVariable int id) {
         String errMessage =  "Beer with id "+ id+ " not found";
             return beerList.stream()
                     .filter(beer -> beer.getBeerId() == id)
@@ -33,9 +35,9 @@ public class BeerRestController {
                     .orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND, errMessage));
 
     }
-    @PutMapping("/beers/{id}")
-    public void updateBeer(@PathVariable int id, @RequestBody Beer newBeer) {
-        Beer beer = beerList.stream()
+    @PutMapping("/{id}")
+    public void updateBeer(@PathVariable int id, @RequestBody BeerImpl newBeer) {
+        BeerImpl beer = beerList.stream()
                 .filter(b -> b.getBeerId() == id)
                 .findFirst()
                 .orElseThrow(() -> new ResponseStatusException(
@@ -45,12 +47,12 @@ public class BeerRestController {
         beer.setBeerId(newBeer.getBeerId());
         beer.setAbv(newBeer.getAbv());
     }
-    @PostMapping("/beers")
-    public Beer addBeer(@RequestBody Beer beer){
+    @PostMapping
+    public BeerImpl addBeer(@RequestBody BeerImpl beer){
         beerList.add(beer);
         return beer;
     }
-    @DeleteMapping("/beers/{id}")
+    @DeleteMapping("/{id}")
     public void deleteBeer(@PathVariable int id){
         String errMessage =  "Beer with id "+ id+ " not found";
         if(!beerList.removeIf(beer -> beer.getBeerId() == id)){

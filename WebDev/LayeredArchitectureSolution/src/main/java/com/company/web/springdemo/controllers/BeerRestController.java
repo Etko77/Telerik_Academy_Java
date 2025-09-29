@@ -49,7 +49,7 @@ public class BeerRestController {
 
     @PutMapping("/{id}")
     public Beer update(@PathVariable int id, @Valid @RequestBody Beer beer) {
-        try {
+        try{
             beer.setId(id);
             service.update(beer);
             return beer;

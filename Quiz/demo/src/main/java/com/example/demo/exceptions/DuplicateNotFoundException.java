@@ -1,4 +1,4 @@
-package com.company.web.springdemo.exceptions;
+package com.example.demo.exceptions;
 
 public class DuplicateNotFoundException extends RuntimeException {
     public DuplicateNotFoundException(String message) {

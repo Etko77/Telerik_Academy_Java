@@ -45,7 +45,7 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public void update(Beer beer) {
+    public void update(int id, Beer beer) {
         boolean duplicateExists = true;
         try {
             Beer existingBeer = repository.get(beer.getName());
@@ -60,7 +60,7 @@ public class BeerServiceImpl implements BeerService {
             throw new EntityDuplicateException("Beer", "name", beer.getName());
         }
 
-        repository.update(beer);
+        repository.update(id, beer);
     }
 
     @Override

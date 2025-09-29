@@ -45,8 +45,8 @@ public class BeerRepositoryImpl implements BeerRepository {
     }
 
     @Override
-    public void update(Beer beer) {
-        Beer beerToUpdate = get(beer.getId());
+    public void update(int id,Beer beer) {
+        Beer beerToUpdate = get(id);
         beerToUpdate.setName(beer.getName());
         beerToUpdate.setAbv(beer.getAbv());
     }
