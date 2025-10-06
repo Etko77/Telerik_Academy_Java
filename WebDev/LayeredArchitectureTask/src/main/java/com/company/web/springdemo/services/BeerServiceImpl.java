@@ -2,7 +2,9 @@ package com.company.web.springdemo.services;
 
 import com.company.web.springdemo.exceptions.DuplicateFoundException;
 import com.company.web.springdemo.exceptions.EntityNotFoundException;
+import com.company.web.springdemo.exceptions.UnathorizedOperationException;
 import com.company.web.springdemo.models.Beer;
+import com.company.web.springdemo.models.User;
 import com.company.web.springdemo.repositories.BeerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,7 +45,11 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public void update(int id, Beer beer) {
+    public void update(int id, Beer beer, User user) {
+
+        if(!user.isAdmin()){
+            throw new UnathorizedOperationException("Beer with id " + id + " is not admin");
+        }
         boolean duplicateExists = true;
         try{
             beerRepository.get(id);
@@ -60,7 +66,10 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(int id, User user) {
+        if(!user.isAdmin()){
+            throw new UnathorizedOperationException("Beer with id " + id + " is not admin");
+        }
         beerRepository.delete(id);
     }
 }
