@@ -46,7 +46,7 @@ public class BeerRestController {
     public Beer create(@RequestHeader HttpHeaders headers, @Valid @RequestBody Beer beer) {
         try{
             User user = authenticationHelper.tryGetUser(headers);
-            beerService.create(beer);
+            beerService.create(user, beer);
             return beerService.get(beer.getId());
         }catch(EntityNotFoundException e){
             throw new  ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());

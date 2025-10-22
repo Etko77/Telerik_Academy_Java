@@ -31,10 +31,15 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public void create(Beer beer) {
-        boolean duplicateExists = true;
+    public void create(User user, Beer beer) {
+        boolean duplicateExists = false;
+        if(!user.isAdmin()){
+            throw new UnathorizedOperationException("User with id " + user.getId() + " is not admin");
+        }
         try{
-            beerRepository.get(beer.getId());
+            if(beerRepository.get().stream().anyMatch(beer1 -> beer1.getId() == beer.getId())){
+                duplicateExists = true;
+            }
         }catch(DuplicateFoundException e){
             duplicateExists = false;
         }
@@ -48,11 +53,10 @@ public class BeerServiceImpl implements BeerService {
     public void update(int id, Beer beer, User user) {
 
         if(!user.isAdmin()){
-            throw new UnathorizedOperationException("Beer with id " + id + " is not admin");
+            throw new UnathorizedOperationException("User with id " + user.getId() + " is not admin");
         }
         boolean duplicateExists = true;
         try{
-            beerRepository.get(id);
             if(beerRepository.get(id).getId() == beer.getId()){
                 duplicateExists = false;
             }
@@ -68,7 +72,7 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public void delete(int id, User user) {
         if(!user.isAdmin()){
-            throw new UnathorizedOperationException("Beer with id " + id + " is not admin");
+            throw new UnathorizedOperationException("User with id " + user.getId() + " is not admin");
         }
         beerRepository.delete(id);
     }

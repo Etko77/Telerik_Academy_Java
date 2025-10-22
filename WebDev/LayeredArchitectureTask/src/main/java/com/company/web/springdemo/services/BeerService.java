@@ -10,7 +10,7 @@ public interface BeerService {
 
     Beer get(int id);
 
-    void create(Beer beer);
+    void create(User user, Beer beer);
 
     void update(int id, Beer beer, User user);
 

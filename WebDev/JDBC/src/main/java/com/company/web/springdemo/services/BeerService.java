@@ -11,12 +11,10 @@ public interface BeerService {
 
     Beer get(int id);
 
-
     void create(Beer beer, User user);
 
     void update(Beer beer, User user);
 
     void delete(int id, User user);
-    void checkModifyPermissions(int beerId, User user);
 
 }

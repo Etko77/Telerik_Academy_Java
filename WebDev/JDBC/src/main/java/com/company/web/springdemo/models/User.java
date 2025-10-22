@@ -1,22 +1,40 @@
 package com.company.web.springdemo.models;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+
+@Entity
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private int id;
 
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
+
+    @Column(name = "password", nullable = false)
     private String password;
-    private String email;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "email")
+    private String email;
+    @Column(name = "is_admin")
     private boolean isAdmin;
 
     public User() {
     }
-    public User(int id, String username, String password, boolean isAdmin){
+
+    public User(int id, String username, String password, boolean isAdmin) {
         this.id = id;
         this.username = username;
-        this.isAdmin = isAdmin;
         this.password = password;
+        this.isAdmin = isAdmin;
     }
 
     public int getId() {
@@ -43,14 +61,6 @@ public class User {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -65,6 +75,14 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public boolean isAdmin() {

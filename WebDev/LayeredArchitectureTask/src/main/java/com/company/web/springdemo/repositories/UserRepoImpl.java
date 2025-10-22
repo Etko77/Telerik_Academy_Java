@@ -14,9 +14,9 @@ public class UserRepoImpl implements UserRepo{
 
     public UserRepoImpl() {
         users = new ArrayList<>();
-        users.add(new User(1,"Pesho",true));
-        users.add(new User(2,"Vanko",true));
-        users.add(new User(3,"Ilian",true));
+        users.add(new User(1,"Pesho","123baba",true));
+        users.add(new User(2,"Vanko","1235Uga",true));
+        users.add(new User(3,"Ilian","1236gegata",true));
     }
     @Override
     public List<User> getUsers() {
@@ -27,13 +27,22 @@ public class UserRepoImpl implements UserRepo{
     public User getUser(int id) {
         return getUsers().stream()
                 .filter(user -> user.getId()== id)
-                .findFirst().orElseThrow(()-> new EntityNotFoundException("User not found"));
+                .findFirst()
+                .orElseThrow(()-> new EntityNotFoundException("User not found"));
     }
 
     @Override
     public User getUserByUsername(String username) {
         return getUsers().stream()
                 .filter(user -> user.getUsername().equals(username))
-                .findFirst().orElseThrow(()-> new EntityNotFoundException("User not found"));
+                .findFirst()
+                .orElseThrow(()-> new EntityNotFoundException("User not found"));
+    }
+
+    @Override
+    public boolean validateUser(String password) {
+        return getUsers().stream()
+                .anyMatch(user -> user.getPassword().equals(password));
+
     }
 }

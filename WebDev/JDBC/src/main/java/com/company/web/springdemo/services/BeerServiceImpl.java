@@ -1,8 +1,8 @@
 package com.company.web.springdemo.services;
 
+import com.company.web.springdemo.exceptions.AuthorizationException;
 import com.company.web.springdemo.exceptions.EntityDuplicateException;
 import com.company.web.springdemo.exceptions.EntityNotFoundException;
-import com.company.web.springdemo.exceptions.AuthorizationException;
 import com.company.web.springdemo.models.Beer;
 import com.company.web.springdemo.models.User;
 import com.company.web.springdemo.repositories.BeerRepository;
@@ -53,7 +53,6 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public void update(Beer beer, User user) {
         checkModifyPermissions(beer.getId(), user);
-
         boolean duplicateExists = true;
         try {
             Beer existingBeer = repository.get(beer.getName());
@@ -77,14 +76,11 @@ public class BeerServiceImpl implements BeerService {
         repository.delete(id);
     }
 
-    public void checkModifyPermissions(int beerId, User user) {
+    private void checkModifyPermissions(int beerId, User user) {
         Beer beer = repository.get(beerId);
-        if (!(user.isAdmin())) {
-            throw new AuthorizationException(MODIFY_BEER_ERROR_MESSAGE);
-        }else if(!(beer.getCreatedBy().equals(user))){
+        if (!(user.isAdmin() || beer.getCreatedBy().equals(user))) {
             throw new AuthorizationException(MODIFY_BEER_ERROR_MESSAGE);
         }
-
     }
 
 }
