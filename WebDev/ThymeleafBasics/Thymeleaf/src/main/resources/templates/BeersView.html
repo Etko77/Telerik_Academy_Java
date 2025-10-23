@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>BeerTag | AllBeers</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body>
+<!-- The header and footer section are the same in each page -->
+<header>
+    <div>
+        <h3>
+            <a href="./HomeView.html">Home</a>
+            | <a href="./BeersView.html">Beers</a>
+            | <a href="./About.html">About</a>
+        </h3>
+    </div>
+</header>
+
+<div>
+    <!-- If there are no beers -->
+    <div>
+        <h2>No Beers</h2>
+    </div>
+    <!-- If there are beers -->
+    <div>
+        <h2>All Beers</h2>
+        <div class="table">
+            <div class="header">
+                <div class="header-cell">Name</div>
+                <div class="header-cell">ABV</div>
+                <div class="header-cell">Style</div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#">Beer Name 1</a>
+                </div>
+                <div class="cell">5.0%</div>
+                <div class="cell">IPA</div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#">Beer Name 2</a>
+                </div>
+                <div class="cell">4.5%</div>
+                <div class="cell">Stout</div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <small>©️ Copyright 2024, BeerTag</small>
+</footer>
+</body>
+</html>
